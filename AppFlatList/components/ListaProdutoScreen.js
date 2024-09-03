@@ -37,6 +37,7 @@ const Item = ({elemento: item}) => {
                         uri: item.urlImagem
                     }
                 }/>}
+            onPress={() => props.navigation.navigate("DetalheProduto", {id: item.id})}
     />
 )};
 
